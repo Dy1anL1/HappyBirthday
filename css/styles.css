@@ -7,44 +7,44 @@
 
 body {
   font-family: "Microsoft YaHei";
-  color: #4a4e69;
-  font-weight: 300;
+  color: white;
+  font-weight: 500;
 }
 
 body ::-webkit-input-placeholder {
   /* WebKit browsers */
   font-family: "Microsoft YaHei";
-  color: #4a4e69;
-  font-weight: 300;
+  color: white;
+  font-weight: 500;
 }
 
 body :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   font-family: "Microsoft YaHei";
-  color: #4a4e69;
+  color: white;
   opacity: 1;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 body ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   font-family: "Microsoft YaHei";
-  color: #4a4e69;
+  color: white;
   opacity: 1;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 body :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   font-family: "Microsoft YaHei";
-  color: #4a4e69;
-  font-weight: 300;
+  color: white;
+  font-weight: 500;
 }
 
 .wrapper {
-  background: #a8edea;
-  background: -webkit-linear-gradient(top left, #a8edea 0%, #fed6e3 100%);
-  background: linear-gradient(to bottom right, #a8edea 0%, #fed6e3 100%);
+  background: #DDA0DD;
+  background: -webkit-linear-gradient(top left, #DDA0DD 0%, #FFB6D9 100%);
+  background: linear-gradient(to bottom right, #DDA0DD 0%, #FFB6D9 100%);
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   top: 0;
@@ -76,7 +76,7 @@ body :-ms-input-placeholder {
   transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-put;
   transition-timing-function: ease-in-put;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 form {
@@ -90,8 +90,8 @@ form input {
   -moz-appearance: none;
   appearance: none;
   outline: 0;
-  border: 1px solid rgba(74, 78, 105, 0.3);
-  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
   width: 250px;
   border-radius: 3px;
   padding: 10px 15px;
@@ -100,20 +100,20 @@ form input {
   text-align: center;
   font-family: "Microsoft YaHei";
   font-size: 18px;
-  color: #4a4e69;
+  color: white;
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 form input:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #4a4e69;
+  color: #79A8AE;
 }
 
 form button {
@@ -121,21 +121,22 @@ form button {
   -moz-appearance: none;
   appearance: none;
   outline: 0;
-  background-color: #4a4e69;
+  background-color: white;
   font-family: "Microsoft YaHei";
   border: 0;
   padding: 10px 15px;
-  color: white;
+  color: #79A8AE;
   border-radius: 3px;
   width: 250px;
   cursor: pointer;
   font-size: 18px;
+  font-weight: 600;
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
 form button:hover {
-  background-color: #6b6f85;
+  background-color: #f5f7f9;
 }
 
 .bg-bubbles {
