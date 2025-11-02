@@ -4,6 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <title>Happy Birthday</title>
   <link rel="stylesheet" href="../css/styless.css" media="screen" type="text/css" />
@@ -220,6 +221,20 @@
     <li></li>
   </ul>
   <script src='../js/jquery.js'></script>
+  <script>
+    $(document).ready(function() {
+      // 绑定到多个选择器确保能捕获点击
+      $('.lk2, .link2, .button-style2').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        alert('生日必须开心呀！🎂🎉\n不开心也要开心！💕');
+        return false;
+      });
+
+      // 确保按钮可以被点击
+      $('.link2').css('pointer-events', 'auto');
+    });
+  </script>
   <audio src="../music/2.mp3" autoplay="autoplay" loop="loop">
 </body>
 

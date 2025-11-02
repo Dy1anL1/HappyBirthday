@@ -264,3 +264,47 @@ form button:hover {
     transform: translateY(-900px) rotate(600deg);
   }
 }
+
+/* ========================================
+   移动端响应式设计 - Mobile Responsive Design
+   ======================================== */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+    margin-top: 15%;
+  }
+  
+  .container h1 {
+    font-size: 32px;
+  }
+  
+  form input {
+    width: 90%;
+    font-size: 16px;
+  }
+  
+  form input:focus {
+    width: 90%;
+  }
+  
+  form button {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-top: 20%;
+  }
+  
+  .container h1 {
+    font-size: 28px;
+  }
+  
+  form input, form button {
+    font-size: 14px;
+  }
+}
+

@@ -2738,3 +2738,181 @@
 .xx94 {
 	height: 80%;
 }
+
+/* ========================================
+   移动端响应式设计 - Mobile Responsive Design
+   ======================================== */
+
+/* 手机竖屏 (宽度小于768px) */
+@media only screen and (max-width: 768px) {
+
+  /* 时间轴隐藏或调整 */
+  .timeline {
+    display: none;
+  }
+
+  /* 所有盒子调整为全宽，上下堆叠 - 保持绝对定位 */
+  .ly-box11, .ly-box12, .ly-box21, .ly-box22, .ly-box23,
+  .ly-box31, .ly-box32, .ly-box51, .ly-box52, .ly-box71, .ly-box72, .ly-box73,
+  .ly-box81, .ly-box82, .ly-box91, .ly-box92, .ly-box93 {
+    width: 90% !important;
+    left: 5% !important;
+    position: static !important;
+    margin: 20px auto !important;
+    height: auto !important;
+    min-height: 300px !important;
+    opacity: 1 !important;
+    transform: scale(1, 1) !important;
+    -webkit-transform: scale(1, 1) !important;
+    display: block !important;
+  }
+
+  /* 小三角隐藏 */
+  .ly-triangle11, .ly-triangle12, .ly-triangle21, .ly-triangle22,
+  .ly-triangle23, .ly-triangle31, .ly-triangle32, .ly-triangle71, .ly-triangle72,
+  .ly-triangle82, .ly-triangle91, .ly-triangle92 {
+    display: none;
+  }
+
+  /* 时间点隐藏 */
+  .timepoint11, .timepoint21, .timepoint31, .timepoint71, .timepoint91 {
+    display: none;
+  }
+
+  /* 文字大小调整 */
+  .ly-txt14, .ly-txt24, .ly-txt26, .ly-txt34, .ly-txt51, .ly-txt61,
+  .ly-txt71, .ly-txt72, .ly-txt73, .ly-txt84, .ly-txt90, .ly-txt91,
+  .ly-txt92, .ly-txt93 {
+    font-size: 16px !important;
+    padding: 10px;
+    height: auto !important;
+    opacity: 1 !important;
+    position: static !important;
+    width: 90% !important;
+    margin: 10px auto !important;
+  }
+
+  .ly-txt12, .ly-txt22, .ly-txt32, .ly-txt82 {
+    font-size: 18px !important;
+    position: static !important;
+    opacity: 1 !important;
+    margin: 10px auto !important;
+  }
+
+  /* 标题文字调整 */
+  .ly-txt11, .ly-txt13, .ly-txt21, .ly-txt23, .ly-txt25,
+  .ly-txt31, .ly-txt33 {
+    position: static !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 10px auto !important;
+    text-align: center;
+  }
+
+  .ly-txt11 img, .ly-txt13 img, .ly-txt21 img,
+  .ly-txt23 img, .ly-txt25 img, .ly-txt31 img, .ly-txt33 img {
+    width: 80% !important;
+    height: auto !important;
+    max-width: 200px;
+  }
+
+  /* 图片容器调整 - 保持绝对定位但固定高度 */
+  .ly-imgbox11, .ly-imgbox21, .ly-imgbox22, .ly-imgbox23,
+  .ly-imgbox31, .ly-imgbox61, .ly-imgbox71, .ly-imgbox72, .ly-imgbox73,
+  .ly-imgbox81, .ly-imgbox91, .ly-imgbox92, .ly-imgbox93 {
+    position: static !important;
+    height: 250px !important;
+    width: 100% !important;
+    margin: 15px auto !important;
+    opacity: 1 !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 图片本身调整 */
+  .ly-img11, .ly-img21, .ly-img22, .ly-img23, .ly-img31,
+  .ly-img61, .ly-img71, .ly-img72, .ly-img73,
+  .ly-img81, .ly-img91, .ly-img92, .ly-img93 {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 250px;
+    object-fit: contain;
+    margin: 0 !important;
+  }
+
+  /* section调整 - 允许滚动 */
+  .section {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 禁用fullPage.js在移动端的固定高度 */
+  #fp-nav {
+    display: none !important;
+  }
+
+  .fp-section {
+    height: auto !important;
+  }
+
+  .fp-tableCell {
+    height: auto !important;
+    display: block !important;
+  }
+}
+
+/* 小屏手机 (宽度小于480px) */
+@media only screen and (max-width: 480px) {
+
+  .ly-box11, .ly-box12, .ly-box21, .ly-box22, .ly-box23,
+  .ly-box31, .ly-box32, .ly-box51, .ly-box52, .ly-box71, .ly-box72, .ly-box73,
+  .ly-box81, .ly-box82, .ly-box91, .ly-box92, .ly-box93 {
+    width: 95% !important;
+    left: 2.5% !important;
+    min-height: 250px !important;
+    padding: 15px;
+    margin: 15px auto !important;
+  }
+
+  /* 文字进一步缩小 */
+  .ly-txt14, .ly-txt24, .ly-txt26, .ly-txt34, .ly-txt51, .ly-txt61,
+  .ly-txt71, .ly-txt72, .ly-txt73, .ly-txt84, .ly-txt90, .ly-txt91,
+  .ly-txt92, .ly-txt93 {
+    font-size: 14px !important;
+    padding: 8px;
+  }
+
+  .ly-txt12, .ly-txt22, .ly-txt32, .ly-txt82 {
+    font-size: 16px !important;
+  }
+
+  .wwww1 {
+    font-size: 12px !important;
+  }
+
+  /* 图片容器缩小 */
+  .ly-imgbox11, .ly-imgbox21, .ly-imgbox22, .ly-imgbox23,
+  .ly-imgbox31, .ly-imgbox61, .ly-imgbox71, .ly-imgbox72, .ly-imgbox73,
+  .ly-imgbox81, .ly-imgbox91, .ly-imgbox92, .ly-imgbox93 {
+    height: 200px !important;
+  }
+
+  .ly-img11, .ly-img21, .ly-img22, .ly-img23, .ly-img31,
+  .ly-img61, .ly-img71, .ly-img72, .ly-img73,
+  .ly-img81, .ly-img91, .ly-img92, .ly-img93 {
+    max-height: 200px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+}
+
