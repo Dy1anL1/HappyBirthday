@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0; url=html/login.html">
+  <title>生日快乐 - 跳转中...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #DDA0DD 0%, #FFB6D9 100%);
+      font-family: "Microsoft YaHei", sans-serif;
+      color: white;
+    }
+    .loading {
+      text-align: center;
+    }
+    .loading h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .loading p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .spinner {
+      margin: 30px auto;
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <h1>🎂 生日快乐!</h1>
+    <div class="spinner"></div>
+    <p>正在加载中...</p>
+    <p><small>如果没有自动跳转，请<a href="html/login.html" style="color: white; text-decoration: underline;">点击这里</a></small></p>
+  </div>
+
+  <script>
+    // 备用跳转方案
+    setTimeout(function() {
+      window.location.href = 'html/login.html';
+    }, 100);
+  </script>
+</body>
+</html>
